@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Student ToolBox</string>
+    <string name="title_activity_main">Student ToolBox</string>
+    <string name="package_name">com.halo.studentoolbox.app</string>
+    <string name="custom_url_scheme">com.halo.studentoolbox.app</string>
+</resources>

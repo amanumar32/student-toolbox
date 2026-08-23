@@ -1,0 +1,175 @@
+#Calculator {
+    padding: 0 1em;
+}
+#Calculator .top {
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    transition: all ease-in-out 0.2s;
+    margin-bottom: 0.5em;
+    position: fixed;
+    width: 90vw;
+}
+
+#Calculator .top svg {
+    width: 23px;
+    height: 23px;
+    fill: var(--primary-text);
+}
+
+#Calculator .top .highlight {
+    fill: var(--accent-color);
+}
+
+#Calculator #page-1 .display {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    max-height: 40vh;
+}
+
+#Calculator #page-1 .display .history-output {
+    text-align: end;
+    padding-right: 5px;
+    padding-top: 2.5em;
+    transition: all ease-in-out 0.2s;
+    overflow-y: scroll;
+    border: none;
+    word-wrap: break-word;
+}
+
+#Calculator #page-1 .display .history-output p {
+    color: var(--secondary-text);
+    user-select: text;
+    margin: 10px;
+    font-family: monospace;
+    font-size: large;
+}
+
+#Calculator #page-1 .display .calc-output {
+    color: var(--tertiary-color);
+    text-align: right;
+    font-size: 30px;
+    padding: 7px 0;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-family: monospace;
+    border-bottom: 1.5px solid var(--secondary-color);
+    height: 10vh;
+}
+
+
+#Calculator #page-1 .buttons,
+#Calculator #page-1 .scientific {
+    margin: 1.5em 1em 0 1em;
+    justify-content: center;
+    transition: all ease-in-out 0.4s;
+    display: grid;
+    align-items: center;
+    height: 30vh;
+}
+
+#Calculator #page-1 .buttons button,
+#Calculator #page-1 .scientific button {
+    color: var(--tertiary-color);
+    border: none;
+    background-color: #423f3f98;
+    border-radius: 100px;
+}
+
+#Calculator #page-1 .buttons {
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(4, auto);
+    gap: 2.5vh 10vw;
+}
+
+#Calculator #page-1 .buttons button {
+    width: 53px;
+    font-weight: 700;
+    height: 53px;
+    font-size: larger;
+}
+
+#Calculator #page-1 .scientific {
+    grid-template-columns: repeat(5, auto);
+    justify-content: center;
+    gap: 1.5vh 7.8vw;
+}
+
+#Calculator #page-1 .scientific button {
+    width: 45px;
+    height: 43px;
+    font-weight: 600;
+    font-size: large;
+    transition: all ease-in-out 0.1s;
+}
+
+#Calculator #page-2 {
+    padding: 4em 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 10vh 2.5vw;
+}
+
+#Calculator #page-2 button {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 100px;
+}
+
+#Calculator #page-2 button svg {
+    width: 25px;
+    fill: var(--accent-color);
+}
+
+#Calculator #page-2 button p {
+    position: absolute;
+    font-size: 12px;
+    color: var(--primary-color);
+    top: 4.5em;
+    font-weight: 600;
+}
+
+#Calculator .menu {
+    position: absolute;
+    right: 0;
+    top: 1em;
+    background-color: #3a3636;
+    width: 8em;
+    height: fit-content;
+    padding: 0;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Calculator .menu button {
+    width: 100%;
+    padding: 1em 0;
+    background-color: transparent;
+    border: none;
+    color: var(--primary-color);
+}
+
+#Calculator .rotate {
+    animation: rotate normal 0.4s;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

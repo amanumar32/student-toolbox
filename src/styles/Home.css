@@ -1,0 +1,288 @@
+#page-home .top {
+    align-items: center;
+    margin: 0 0.5em;
+}
+
+#page-home .top input {
+    width: 85%;
+    height: 3.8em;
+    background-color: var(--secondary-color);
+    border: none;
+    border-radius: 100px;
+    padding: 0 2em;
+    color: var(--primary-text);
+    outline: none;
+}
+
+#page-home .top select {
+    width: 56px;
+    height: 30px;
+    background: transparent;
+    color: var(--accent-color);
+    border: none;
+    border-bottom: 2px solid;
+    text-align: center;
+    appearance: none;
+    outline: none;
+}
+
+#page-home .top svg {
+    width: 25px;
+    height: 25px;
+    fill: var(--primary-text);
+}
+
+#page-home hr {
+    border: 1px solid var(--secondary-color);
+    margin-bottom: 1.5em;
+}
+
+#page-home .tools {
+    justify-content: space-evenly;
+    margin: 2em 0 3em 0;
+}
+
+#page-home .tools .button {
+    background-color: var(--secondary-color);
+    width: 53px;
+    height: 53px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#page-home .tools .button svg {
+    width: 30px;
+    height: 30px;
+}
+
+#page-home .tools .button p {
+    position: absolute;
+    top: 4.5em;
+    font-size: 10.5px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-text);
+}
+
+#page-home .todo {
+    height: 200px;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    padding: 1.1em;
+    position: relative;
+    margin: 0 1.2em;
+}
+
+#page-home .todo .addTask {
+    width: 55px;
+    height: 55px;
+    border-radius: 100px;
+    background: var(--accent-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    position: absolute;
+    right: 1em;
+    bottom: 1em;
+}
+
+#page-home .todo .addTask svg {
+    fill: var(--tertiary-color);
+    width: 20px;
+    height: 20px;
+}
+
+#page-home .todo strong {
+    color: var(--accent-color);
+}
+
+#page-home .todo i {
+    color: var(--primary-text);
+    font-style: normal;
+    text-align: center;
+    margin-top: 2em;
+}
+
+#page-home .todo .tasks {
+    margin-top: 0.8em;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    gap: 5px;
+    height: 125px;
+}
+
+#page-home .todo .tasks label {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+    margin-left: 1em;
+}
+
+#page-home .todo .tasks input[type=text] {
+    background-color: var(--secondary-color);
+    border: none;
+    color: var(--primary-text);
+    outline: none;
+    font-size: 20px;
+    font-weight: 700;
+    width: 90%;
+}
+
+#page-home .todo .tasks input[type=checkbox] {
+    appearance: none;
+    min-width: 16px;
+    min-height: 16px;
+    max-width: 16px;
+    max-height: 16px;
+    border-radius: 4px;
+    background-color: var(--secondary-text);
+    border: 1px solid var(--primary-text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--tertiary-color);
+    cursor: pointer;
+}
+
+#page-home .todo .tasks input[type=checkbox]:checked::after {
+    content: '✔';
+}
+
+#page-home .todo .tasks input[type=checkbox].checked {
+    background-color: var(--accent-color);
+    border: var(--accent-color);
+}
+
+#page-home .todo .tasks b {
+    color: var(--primary-text);
+    font-size: 20px;
+}
+
+#page-home .todo .tasks b.checked {
+    color: var(--accent-color);
+    transition: all ease-in-out 0.3s;
+    text-decoration: line-through;
+}
+
+#page-tools {
+    padding: 0.5em;
+}
+
+#page-tools .section {
+    margin-bottom: 1.5em;
+}
+
+#page-tools .section strong {
+    color: var(--primary-text);
+    margin-left: 1em;
+}
+
+#page-tools .section .tab {
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    justify-items: center;
+    padding-bottom: 2.3em;
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+#page-tools .section .tab button {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #383838;
+    border: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#page-tools .section .tab button svg {
+    width: 25px;
+}
+
+#page-tools .section .tab button p {
+    position: absolute;
+    color: var(--primary-text);
+    top: 3.3em;
+    font-weight: 600;
+    font-size: 12.5px;
+    white-space: nowrap;
+}
+
+nav {
+    background-color: #2B2B2B;
+    height: 3.5em;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 0.5em;
+}
+
+nav div {
+    height: 40px;
+    width: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+nav .unique {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: var(--accent-color);
+    position: absolute;
+    bottom: 1.5em;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .unique svg {
+    fill: var(--tertiary-color);
+    width: 25px;
+    height: 25px;
+}
+
+nav div svg {
+    fill: #9f9c9c;
+    width: 25px;
+    height: 25px;
+}
+
+nav div p {
+    position: absolute;
+    font-size: 11.5px;
+    font-weight: 600;
+    top: 25px;
+    text-align: center;
+    color: var(--secondary-text);
+}
+
+.highlighted svg {
+    fill: var(--accent-color);
+}
+
+.highlighted p {
+    color: var(--accent-color);
+}

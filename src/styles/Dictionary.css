@@ -1,0 +1,109 @@
+#dictionary-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--secondary-color);
+    width: 80vw;
+    padding: 1em 2em;
+    border-radius: 25px;
+    margin-top: 15vh;
+}
+
+#dictionary-not-found .row {
+    gap: 1em;
+}
+
+#dictionary-not-found .row button {
+    width: 30vw;
+    height: 3em;
+    border-radius: 20px;
+    border: none;
+    font-weight: 500;
+    color: var(--accent-color);
+    background-color: transparent;
+    font-size: large;
+}
+
+#Dictionary {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#Dictionary .top {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+    align-items: center;
+    width: 100vw;
+}
+
+#Dictionary .top svg {
+    width: 25px;
+    fill: var(--primary-color);
+}
+
+#Dictionary .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    margin-bottom: 2.5em;
+}
+
+#Dictionary .input-container input {
+    width: 100%;
+    height: 3.5em;
+    border-radius: 50px;
+    border: none;
+    padding: 0 2em;
+    background-color: var(--secondary-color);
+    color: var(--primary-text);
+    font-weight: 500;
+}
+
+#Dictionary .input-container input:focus {
+    outline: 2px solid var(--accent-color);
+}
+
+#Dictionary .results {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90vw;
+    overflow: hidden;
+    padding: 1em 1.5em;
+    border-radius: 25px;
+    margin-bottom: 1em;
+    cursor: pointer;
+    background-color: var(--secondary-color);
+    animation: slide-in ease-in-out 0.3s;
+    transition: height 0.4s ease-in-out;
+}
+
+#Dictionary .results:hover {
+    outline: solid var(--accent-color);
+}
+
+#Dictionary .results strong {
+    font-size: 1.2em;
+    color: var(--accent-color);
+    user-select: text;
+}
+
+#Dictionary .results p, #Dictionary .results span, #Dictionary .results li {
+    color: var(--primary-text);
+    font-weight: 500;
+    user-select: text;
+    margin: 0;
+}
+
+@keyframes slide-in {
+    0% {
+        margin-top: 100vh;
+    }
+
+    100% {
+        margin-top: inherit;
+    }
+}

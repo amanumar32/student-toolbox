@@ -1,0 +1,84 @@
+#tictactoe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-top: 3em;
+}
+
+#tictactoe .board {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    justify-content: center;
+    justify-items: center;
+    gap: 0;
+    position: relative;
+}
+
+#tictactoe .board .line {
+    position: absolute;
+    background-color: var(--accent-color);
+}
+
+#tictactoe .box {
+    width: calc(90vw/3);
+    height: calc(90vw/3);
+    background-color: transparent;
+    border: 2px solid aliceblue;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#tictactoe .box svg {
+    width: 50px;
+    fill: aliceblue;
+}
+
+#tictactoe .scoreBoard {
+    position: absolute;
+    top: 3.5em;
+    width: 80%;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    padding: 0 1em;
+    border-radius: 30px;
+}
+
+#tictactoe .scoreBoard svg {
+    width: 20px;
+    fill: var(--primary-text);
+}
+
+#tictactoe .scoreBoard b {
+    font-size: larger;
+    margin: 0 20px;
+    color: var(--accent-color);
+}
+
+#tictactoe .statusBar {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+    height: 15em;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    gap: 10px;
+}
+
+#tictactoe .statusBar button {
+    width: 70%;
+    height: 3em;
+    border-radius: 20px;
+    border: none;
+    background-color: var(--primary-text);
+    font-weight: 500;
+    color: var(--secondary-color);
+}

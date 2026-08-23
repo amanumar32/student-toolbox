@@ -1,0 +1,103 @@
+:root {
+    --primary-color: #F7F7F7;
+    --secondary-color: #3B3939;
+    --tertiary-color: #ffffff;
+    --primary-text: #dcdcdc;
+    --secondary-text: #757575;
+    --accent-color: #536DFE;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: system-ui;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+*::-webkit-scrollbar,
+*::-webkit-inner-spin-button,
+*::-webkit-outer-spin-button {
+    display: none;
+}
+
+
+html {
+    background-color: #242424;
+    color: var(--primary-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 2em;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input {
+    user-select: text;
+}
+
+input,
+select {
+    outline: none;
+}
+
+input::placeholder {
+    color: inherit;
+}
+
+button,
+select,
+svg {
+    cursor: pointer;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.spinner {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: calc(50vh - 25px);
+    left: calc(50vw - 25px);
+    background-color: transparent !important;
+    border-radius: 100px;
+    border: 5px solid var(--accent-color);
+    border-top: transparent solid 5px;
+    animation: rotate infinite linear 1s;
+    cursor: wait;
+    z-index: 12;
+}
+
+.alert {
+    width: 50vw;
+    padding: 1em;
+    text-align: center;
+    border-radius: 25px;
+    position: fixed;
+    font-size: smaller;
+    color: var(--primary-text);
+    font-weight: 500;
+    background-color: var(--secondary-color);
+    transition: all ease-in-out 0.3s;
+}
